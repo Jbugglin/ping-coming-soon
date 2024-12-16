@@ -1,0 +1,96 @@
+:root {
+    --pri-blue: hsl(223, 87%, 63%);
+    --sec-pale-blue: hsl(223, 100%, 88%);
+    --sec-light-red: hsl(354, 100%, 66%);
+    --neu-gray: hsl(0, 0%, 59%);
+    --neu-very-dark-blue: hsl(209, 33%, 12%);
+    
+    font-size: 20px;
+    font-family: "Libre Franklin", sans-serif;
+}
+
+/* CSS reset */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100dvh;
+    width: 100dvw;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Non-viewport dependant styling */
+footer {
+    position: absolute;
+    bottom: 0;
+}
+
+/* Mobile viewport */
+
+main {
+    width: 95%;
+    height: 95%;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+article h1 {
+    font-weight: 300;
+}
+
+article h1 span {
+    font-weight: 700;
+}
+
+article p {
+    margin: 1rem;
+    font-size: 0.75rem;
+    font-weight: 300;
+}
+
+.user-input-form {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+}
+
+.dashboard-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.social-media-icons {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+}
+
+.social-media-link {
+    border: 1px solid red;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 1rem 3rem;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+/* Desktop viewport */

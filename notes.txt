@@ -1,0 +1,8 @@
+Basic client-side validation
+
+Users should:
+    -view optimal layout per screen
+    -see hover and focus states
+    -recieve error message:
+        -input field empty
+        -email address not formatted correctly
