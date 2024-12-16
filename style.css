@@ -26,6 +26,22 @@ body {
 }
 
 /* Non-viewport dependant styling */
+.social-media-link {
+    border: 1px solid var(--neu-gray);
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 1rem 3rem;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.social-media-icons {
+    color: var(--pri-blue);
+}
+
 footer {
     position: absolute;
     bottom: 0;
@@ -79,18 +95,6 @@ article p {
     display: flex;
     position: absolute;
     bottom: 0;
-}
-
-.social-media-link {
-    border: 1px solid red;
-    width: 20px;
-    height: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 1rem 1rem 3rem;
-    border-radius: 1rem;
-    padding: 1rem;
 }
 
 /* Desktop viewport */
