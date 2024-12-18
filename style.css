@@ -157,33 +157,6 @@ footer {
         width: 65px;
     }
 
-    .user-input-form {
-        margin: 0rem;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-
-    input {
-        margin: 0rem 0.5rem 0rem 0rem;
-        width: 55%;
-        height: 2rem;
-    }
-
-    button {
-        margin: 0;
-        width: 25%;
-        height: 2rem;
-        font-size: 0.625rem;
-    }
-
-    button:hover {
-        background-color: hsl(223, 94%, 68%);
-        box-shadow: 0rem 0.125rem 0.25rem var(--sec-pale-blue);
-        cursor: pointer;
-    }
-
     .dashboard-img {
         margin: 2.5rem auto;
         display: flex;
