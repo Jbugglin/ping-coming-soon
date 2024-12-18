@@ -33,25 +33,16 @@ main {
 
 /* Non-viewport dependant styling */
 .social-media-link {
-    border: 1px solid var(--neu-gray);
-    width: 20px;
-    height: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 1rem 1rem 3rem;
-    border-radius: 1rem;
-    padding: 1rem;
+    border: 1px solid var(--sec-pale-blue);
 }
 
 .social-media-icons {
     color: var(--pri-blue);
 }
 
-footer {
-    position: absolute;
-    bottom: 0;
-    font-size: 0.625rem;
+.social-media-link:hover {
+    background-color: var(--pri-blue);
+    color: white;
 }
 
 /* Mobile viewport */
@@ -62,7 +53,6 @@ main {
     align-items: center;
     padding: 1.25rem;
     max-width: 375px;
-    border: 1px solid red;
 }
 
 .logo img {
@@ -82,10 +72,12 @@ article h1 {
     font-weight: 300;
     font-size: 1.25rem;
     margin: 1rem auto;
+    color: var(--neu-gray);
 }
 
 article h1 span {
     font-weight: 700;
+    color: black;
 }
 
 article p {
@@ -106,18 +98,11 @@ input {
     padding: 0.5rem;
     border-radius: 1rem;
     border: 1px solid var(--sec-pale-blue);
+    color: var(--sec-pale-blue);
 }
 
-input:invalid {
-    border: 2px solid red;
-}
-
-input:invalid:required {
-    border: 2px solid orange;
-}
-
-input:valid {
-    border: 2px solid green;
+input::placeholder {
+    color: var(--sec-pale-blue);
 }
 
 button {
@@ -126,6 +111,8 @@ button {
     padding: 0.5rem;
     border-radius: 1rem;
     border: none;
+    font-size: 0.75rem;
+    letter-spacing: 1px;
     background-color: var(--pri-blue);
     color: white;
     box-shadow: 0rem 0.125rem 0.25rem var(--pri-blue);
@@ -141,9 +128,82 @@ button {
     display: flex;
 }
 
+.social-media-link {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 1rem;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    font-size: 0.625rem;
+    color: var(--neu-gray);
+}
+
 /* Desktop viewport */
-@media screen and (min-width: 1440px) {
-    body {
-        background-color: red;
+@media screen and (min-width: 500px) {
+    main {
+        max-width: 600px;
+        padding: 2rem;
+    }
+
+    .logo img {
+        width: 65px;
+    }
+
+    .user-input-form {
+        margin: 0rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    input {
+        margin: 0rem 0.5rem 0rem 0rem;
+        width: 55%;
+        height: 2rem;
+    }
+
+    button {
+        margin: 0;
+        width: 25%;
+        height: 2rem;
+        font-size: 0.625rem;
+    }
+
+    button:hover {
+        background-color: hsl(223, 94%, 68%);
+        box-shadow: 0rem 0.125rem 0.25rem var(--sec-pale-blue);
+        cursor: pointer;
+    }
+
+    .dashboard-img {
+        margin: 2.5rem auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .dashboard-img img {
+        width: 75%;
+        height: auto;
+    }
+
+    .social-media-link:hover {
+        cursor: pointer;
+    }
+
+    footer {
+        position: absolute;
+        bottom: 0;
+        font-size: 0.5rem;
+        color: var(--neu-gray);
     }
 }
