@@ -32,17 +32,78 @@ main {
 }
 
 /* Non-viewport dependant styling */
+
 .social-media-link {
     border: 1px solid var(--sec-pale-blue);
 }
 
-.social-media-icons {
+.social-media-icons a {
     color: var(--pri-blue);
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 1rem;
+    border-radius: 1rem;
+    padding: 1rem;
 }
 
 .social-media-link:hover {
     background-color: var(--pri-blue);
+}
+
+.social-media-link a:hover {
     color: white;
+}
+
+.form-container {
+    width: 75%;
+}
+
+.email-form {
+    display: flex;
+}
+
+#user-email-input {
+    border: 1px solid var(--sec-pale-blue);
+    padding: 0.5rem;
+    width: 75%;
+    border-radius: 1rem;
+    margin: 0rem 0.25rem 0rem 0rem;
+}
+
+#user-email-input::placeholder {
+    color: var(--sec-pale-blue);
+}
+
+#user-email-input:focus {
+    border: 2px solid var(--sec-light-red);
+    outline: none;
+}
+
+#submit-button {
+    width: 30%;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    border: none;
+    margin: 0rem 0rem 0rem 0.25rem;
+    font-size: 0.625rem;
+    background-color: var(--pri-blue);
+    color: white;
+    box-shadow: 0rem 0.14rem 0.125rem var(--sec-pale-blue);
+}
+
+#submit-button:hover {
+    background-color: var(--sec-pale-blue);
+    cursor: pointer;
+}
+
+#error-message {
+    font-size: 0.45rem;
+    color: var(--sec-light-red);
+    margin: 0rem 0rem 0rem 1.5rem;
+    display: none;
 }
 
 /* Mobile viewport */
@@ -84,38 +145,6 @@ article p {
     margin: 0rem auto 2rem;
     font-size: 0.75rem;
     font-weight: 300;
-}
-
-.user-input-form {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-input {
-    margin: 1rem auto 0.3rem;
-    width: 100%;
-    padding: 0.5rem;
-    border-radius: 1rem;
-    border: 1px solid var(--sec-pale-blue);
-    color: var(--sec-pale-blue);
-}
-
-input::placeholder {
-    color: var(--sec-pale-blue);
-}
-
-button {
-    margin: 0.3rem auto 1.5rem;
-    width: 100%;
-    padding: 0.5rem;
-    border-radius: 1rem;
-    border: none;
-    font-size: 0.75rem;
-    letter-spacing: 1px;
-    background-color: var(--pri-blue);
-    color: white;
-    box-shadow: 0rem 0.125rem 0.25rem var(--pri-blue);
 }
 
 .dashboard-img img {
