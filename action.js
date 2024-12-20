@@ -8,24 +8,23 @@ const validate = (e) => {
     const emailAddress = document.getElementById('user-email-input')
     if (emailAddress.value === ""){
         emailAddress.focus();
-        document.getElementById('error-message').style.display = "block";       
+        document.getElementById('error-message').style.display = "block";
+        document.getElementById('user-email-input').style.borderColor = "var(--sec-light-red)";
         return false;
+    } else {
+        document.getElementById('user-email-input').style.borderColor = "green";
     }
 
     if (!emailFormatIsValid(emailAddress.value)) {
         emailAddress.focus();
-        document.getElementById('error-message').style.display = "block";    
+        document.getElementById('error-message').style.display = "block";
+        document.getElementById('user-email-input').style.borderColor = "var(--sec-light-red)";
         return false;
+    } else {
+        document.getElementById('user-email-input').style.borderColor = "green";
     }
     return true
 }
-/**
- *  Adding in data format validation...
- *    Email needs to have 1x '@' and atleast 1x '.' characters.
- *    @ character needs to be first.
- *    . character needs to be after the @ character.
- *    Use regex for this validation....
- */
 
 const emailFormatIsValid = email => {
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);

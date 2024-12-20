@@ -19,7 +19,6 @@
 body {
     height: 100dvh;
     width: 100dvw;
-    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,7 +43,6 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 1rem 1rem;
     border-radius: 1rem;
     padding: 1rem;
 }
@@ -78,7 +76,7 @@ main {
 }
 
 #user-email-input:focus {
-    border: 2px solid var(--sec-light-red);
+    border: 1px solid var(--neu-gray);
     outline: none;
 }
 
@@ -149,37 +147,45 @@ article p {
 
 .dashboard-img img {
     width: 100%;
-    height: auto;
-    display: block;
+    height: 100%;
+    margin: 1.75rem auto 0rem;
 }
 
 .social-media-icons {
     display: flex;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 3rem;
 }
 
 .social-media-link {
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 1rem 1rem;
+    margin: 0rem 0.25rem;
     border-radius: 1rem;
-    padding: 1rem;
+    padding: 0.75rem;
+    font-size: 0.75rem;
 }
 
 footer {
     position: absolute;
     bottom: 0;
+    margin-bottom: 1.375rem;
     font-size: 0.625rem;
     color: var(--neu-gray);
 }
 
 /* Desktop viewport */
 @media screen and (min-width: 500px) {
+    body {
+        padding: 4rem;
+    }
+
     main {
         max-width: 600px;
-        padding: 2rem;
     }
 
     .logo img {
