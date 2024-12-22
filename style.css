@@ -110,7 +110,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1.25rem;
+    padding: 3rem 1.25rem;
     max-width: 375px;
 }
 
@@ -145,10 +145,30 @@ article p {
     font-weight: 300;
 }
 
+.form-container {
+    width: 100%;
+}
+
+.email-form {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+#user-email-input {
+    width: 100%;
+    margin: 0.25rem auto;
+}
+
+#submit-button {
+    width: 100%;
+    margin: 0.25rem auto;
+}
+
 .dashboard-img img {
     width: 100%;
     height: 100%;
-    margin: 1.75rem auto 0rem;
+    margin: 3rem auto 0rem;
 }
 
 .social-media-icons {
@@ -181,11 +201,11 @@ footer {
 /* Desktop viewport */
 @media screen and (min-width: 500px) {
     body {
-        padding: 4rem;
+        padding: 1rem auto orem;
     }
 
     main {
-        max-width: 600px;
+        max-width: 650px;
     }
 
     .logo img {
@@ -204,6 +224,11 @@ footer {
         height: auto;
     }
 
+    .social-media-icons {
+        margin: 1.5rem auto 2.5rem;
+    }
+
+
     .social-media-link:hover {
         cursor: pointer;
     }
@@ -213,5 +238,6 @@ footer {
         bottom: 0;
         font-size: 0.5rem;
         color: var(--neu-gray);
+        margin: 1rem;
     }
 }
