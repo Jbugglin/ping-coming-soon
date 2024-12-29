@@ -17,42 +17,46 @@
 <body>
 
     <main>
-        <div class="logo">
-            <img src="./images/logo.svg" alt="Ping-logo">
-        </div>
+        <div class="top-half">
+            <div class="logo">
+                <img src="./images/logo.svg" alt="Ping-logo">
+            </div>
+    
+            <article>
+                <h1>We are launching <span>soon!</span></h1>
+                <p>Subscribe and get notified</p>
+            </article>
+    
+            <div class="form-container">
+                <form class="email-form">
+                    <input type="email" name="user-email-input" id="user-email-input" placeholder="Your email address...">
+                    <div id="error-message">
+                        <p class="error"><em>Please provide a valid email address</em></p>
+                    </div>
 
-        <article>
-            <h1>We are launching <span>soon!</span></h1>
-            <p>Subscribe and get notified</p>
-        </article>
+                    <input type="submit" value="Notify Me" id="submit-button">
+                </form>
 
-        <div class="form-container">
-            <form class="email-form">
-                <input type="email" name="user-email-input" id="user-email-input" placeholder="Your email address...">
-                <input type="submit" value="Notify Me" id="submit-button">
-            </form>
-            <div id="error-message">
-                <p class="error">Please provide a valid email address</p>
+                
             </div>
         </div>
 
-        <div class="dashboard-img">
-            <img src="./images/illustration-dashboard.png" alt="dashboard-illustration">
+        <div class="bottom-half">
+            <div class="dashboard-img">
+                <img src="./images/illustration-dashboard.png" alt="dashboard-illustration">
+            </div>
+    
+            <div class="social-media-icons">
+                <div class="social-media-link"><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></div>
+                <div class="social-media-link"><a href="https://x.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a></div>
+                <div class="social-media-link"><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a></div>
+            </div>
+            
+            <p class="copyright-line">
+                &copy; Copyright Ping. All rights reserved.
+            </p>
         </div>
     </main>
-
-    <footer>
-        <div class="social-media-icons">
-            <div class="social-media-link"><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></div>
-            <div class="social-media-link"><a href="https://x.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a></div>
-            <div class="social-media-link"><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a></div>
-        </div>
-
-        <p class="copyright-line">
-            &copy; Copyright Ping. All rights reserved.
-        </p>
-    </footer>
-
     <script src="https://kit.fontawesome.com/1e81cf774a.js" crossorigin="anonymous"></script>
     <script src="./action.js"></script>
 </body>
