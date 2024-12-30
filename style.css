@@ -12,6 +12,7 @@
 /* CSS reset */
 html {
     height: 100%;
+    width: 100%;
     box-sizing: border-box;
 }
 
@@ -24,6 +25,9 @@ html {
 body {
     height: 100dvh;
     width: 100dvw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 main {
