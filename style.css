@@ -31,6 +31,10 @@ main {
     width: 100%;
     max-width: 350px;
     height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Mobile-design */
@@ -122,7 +126,10 @@ article p {
 .bottom-half {
     height: 50%;
     width: 100%;
-    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .dashboard-img img {
@@ -139,23 +146,25 @@ article p {
 
 .social-media-link {
     border: 1px solid var(--sec-pale-blue);
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0.625rem;
+    margin: 1rem 0.625rem;
     border-radius: 1.25rem;
 }
 
 .social-media-link a {
     color: var(--pri-blue);
+    font-size: 0.75rem;
 }
 
 .copyright-line {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 0.625rem;
+    font-size: 0.5rem;
+    color: var(--neu-gray);
 }
 
