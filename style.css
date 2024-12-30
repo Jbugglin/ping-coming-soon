@@ -139,6 +139,9 @@ article p {
 .dashboard-img img {
     width: 95%;
     height: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .social-media-icons {
