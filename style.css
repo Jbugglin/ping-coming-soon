@@ -103,6 +103,8 @@ article p {
 .form-container #user-email-input::placeholder {
     color: var(--sec-pale-blue);
     text-indent: 30px;
+    display: flex;
+    align-items: center;
 }
 
 .form-container #error-message {
@@ -177,5 +179,34 @@ article p {
     color: var(--neu-gray);
     position: absolute;
     bottom: 0;
+}
+
+/* Desktop Design */
+@media screen and (min-width: 500px) {
+    main {
+        max-width: 750px;
+    }
+
+    .form-container .email-form {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .email-form #user-email-input {
+        width: 65%;
+        height: 2.75rem;
+        border-radius: 1.5rem;
+    }
+
+    .email-form #user-email-input::placeholder {
+        font-size: 0.75rem;
+    }
+
+    .email-form #submit-button {
+        width: 35%;
+        height: 2.75rem;
+        border-radius: 1.5rem;
+    }
 }
 
