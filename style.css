@@ -50,6 +50,7 @@ main {
 
 .logo img {
     width: 65px;
+    margin: 1.5rem auto 1rem;
 }
 
 article {
@@ -64,7 +65,7 @@ article h1 {
     font-size: 1.25rem;
     color: var(--neu-gray);
     font-weight: 400;
-    margin: 0.5rem;
+    margin: 0.5rem auto 1rem;
 }
 
 article h1 span {
@@ -79,7 +80,7 @@ article p {
 
 .form-container {
     margin: 1rem auto;
-    width: 100%;
+    width: 85%;
 }
 
 .form-container .email-form {
@@ -93,8 +94,8 @@ article p {
     width: 100%;
     margin: 0.25rem;
     border: 1px solid var(--sec-pale-blue);
-    height: 2rem;
-    border-radius: 1rem;
+    height: 2.25rem;
+    border-radius: 1.25rem;
     text-indent: 30px;
 }
 
@@ -113,13 +114,14 @@ article p {
 .form-container #submit-button {
     width: 100%;
     margin: 0.25rem;
-    height: 2rem;
+    height: 2.25rem;
     border: none;
-    border-radius: 1rem;
+    border-radius: 1.25rem;
     background-color: var(--pri-blue);
     color: white;
     font-weight: 550;
     font-size: 0.875rem;
+    box-shadow: 0rem 0.5rem 0.75rem var(--sec-pale-blue);
 }
 
 /* Bottom half-of-screen styling */
@@ -144,7 +146,7 @@ article p {
     align-items: center;
     position: absolute;
     bottom: 0;
-    margin: 1rem auto;
+    margin: 0.5rem auto;
 }
 
 .social-media-link {
