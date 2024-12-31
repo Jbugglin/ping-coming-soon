@@ -1,6 +1,0 @@
-submit email with input field
-
-error message:
-    -input form is empty
-    -email not formatted correctly (name@host.tld)
-        -The message for this error should say *"Please provide a valid email address"*
